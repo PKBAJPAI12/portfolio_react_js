@@ -1,0 +1,782 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body{
+  background-color: black;
+  color:white;
+  font-size: 24px;
+}
+body p{
+  color: white;
+}
+@media(max-width:1920px){
+  .navbar{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: sticky;
+
+  }
+  .navleft{
+      display: flex;
+      position: absolute;
+      top:2%;
+      left:4%
+  }
+  .navleft h1{
+  font-style: italic;
+  color: white;
+  font-size: 1.4rem;
+  }
+  .navright{
+      display: flex; 
+      align-items: center;
+  }
+  .navright li{
+      list-style: none;
+      color: white;
+      font-size: 1.1rem;
+      padding-left: 0.7rem;
+      padding-right: 0.7rem;
+  
+  }
+  .navright li a{
+      text-decoration: none;
+      color: white;
+  }
+  .hamburger{
+      position: absolute;
+      top:25px;
+      right:3%;
+      cursor: pointer;
+      display: none;
+  }
+  #line1{
+      height:3px;
+      width:30px;
+      margin-bottom: 0.2em;
+      background-color:white;
+  }
+  #line2{
+      height:3px;
+      width:27px;
+      margin-left:3px;
+      margin-bottom: 0.2em;
+      background-color:white;
+  }
+   #line3{
+      height:3px;
+      width:24px;
+      margin-left:6px;
+      margin-bottom: 0.2em;
+      background-color:white;
+  }
+
+  .circle{
+      border-radius: 100%;
+      z-index: -1;
+      position:absolute;
+     }
+     
+     
+     .about{
+      display: flex;
+      margin: 2rem 6rem;
+     }
+     #aboutsection{
+      width: 60%;
+      animation: moveleft 3s ease-in-out 0.5s 1;
+     }
+     @keyframes moveleft {
+      0%{
+          transform: translateX(30%);
+          opacity: 0;
+      }
+      
+      100%{
+          transform: translateX(0%);
+          opacity: 1;
+
+
+      }
+     }
+#aboutsection h1{
+  font-size: 2em;
+animation: fadetext 2s linear 0.5s 1 alternate;
+}
+@keyframes fadetext {
+  0%{
+      transform: translateX(-20%);
+      opacity: 0;
+  }
+  25%{
+      transform: translateX(-15%);
+      opacity: 0.25;
+
+  }50%{
+      transform: translateX(-10%);
+      opacity: 0.5;
+
+  }75%{
+      transform: translateX(-5%);
+      opacity: 0.75;
+
+  }
+  100%{
+      transform: translateX(0%);
+      opacity: 1;
+
+  }
+}
+
+#aboutsection p{
+  font-size:1em;
+  animation: fadetextright 2s linear 0.5s 1 alternate;
+
+}
+@keyframes fadetextright {
+  0%{
+      transform: translateX(20%);
+  }
+  25%{
+      transform: translateX(15%);
+  }50%{
+      transform: translateX(10%);
+  }75%{
+      transform: translateX(5%);
+  }
+  100%{
+      transform: translateX(0%);
+  }
+}
+
+     #aboutsummary{
+      width: 70%;
+     }
+     
+     #aboutimage{
+      width:40%; 
+      display: flex; 
+      justify-content: end;
+      animation: moveright 3s ease-in-out 0.5s 1;
+
+     }
+     @keyframes moveright {
+      0%{
+          transform: translateX(-10%);
+          opacity: 0;
+      }
+      
+      100%{
+          transform: translateX(0%);
+          opacity: 1;
+
+
+      }
+     }
+     #aboutimage img{
+     
+      width:20rem;
+     
+     }
+     .aboutlink{
+      display: flex;
+      animation:  fadetextright 2s linear 0.5s 1 alternate;;
+     }
+
+     .aboutlink a{
+      padding: 0.2em;
+     }
+     .aboutlink img{
+      width: 2em;
+     }
+     .aboutbutton{
+      margin-top: 1.5em;
+     }
+     .aboutbutton button{
+      width:8rem;
+      padding: 0.5rem; 
+      border-top-left-radius:2rem; 
+      border-bottom-right-radius: 2rem; 
+      background-color:rgb(76, 149, 197); 
+      color: white; 
+      font-size: 1.1rem;
+      animation:  fadetext 2s linear 0.5s 1 alternate;;
+
+     }
+     .aboutbutton button:hover{
+color: blue;
+background-color: red;
+border-top-right-radius:2rem; 
+border-bottom-left-radius: 2rem; 
+transition: all 2s;
+     }
+  
+  
+       /*skill part of portfolio*/
+       
+      
+      .skillsection{
+  margin: 2rem 6rem;
+  display: flex;
+  animation: moveright 3s ease-in-out 4s 1;
+
+  }
+  .skillsection p{
+      animation: fadetextright 2s linear 4s 1 alternate;
+
+  }
+      #skillsectionimage{
+          width: 55%;
+          margin: auto;
+          animation: moveleft 3s ease-in-out 4s 1;
+
+
+      }
+      #skillsectionimage img{
+          width: 20rem;
+
+      }
+      #skillsectioncontent{
+          width: 45%;
+         }
+      #skillprofieciency{
+          margin: 2rem 6rem;
+      }
+      
+       /*experience section css*/
+         .experience{
+          display: flex; 
+          background-color: white; 
+          border-radius: 1rem;
+         }
+  
+         #experiencetitle{
+          width:29%; 
+          flex-direction: column;
+          background-color: rgb(76, 149, 197);
+           display: flex; 
+           justify-content: center;
+           align-items: center; 
+           border-top-left-radius: 1rem; 
+           border-bottom-left-radius: 1rem;
+         }
+         #experiencesection{
+          width:69%; 
+          padding-left:5%;
+          margin-top: 1%;
+          margin-bottom: 1%;
+         }
+     
+         .triangle{
+          width:2%;
+          border-top:20px solid transparent;
+          border-bottom: 20px solid transparent;
+          border-right:30px solid white;
+          position: relative;
+          left:-3.8%;
+          height: 0px;
+      
+      
+      }
+  
+      .card{
+          width:20rem;
+          height:40rem;
+          border:1px solid white;
+          border-radius: 1rem;
+          margin-bottom: 1rem;
+          background-color: white;
+          margin-left: 0.5rem;
+              margin-right:0.5rem;
+            
+             }
+             #span1{
+              
+                animation: span1 9s linear 2s infinite;
+                
+              }
+             #span2{
+              
+              animation: span2 9s linear 2s infinite;
+
+    
+           }
+           #span3{
+              animation: span3 9s linear 2s infinite;
+    
+           }
+             @keyframes span1 {
+              0%{
+                  width: 0%;
+                  background-color: gold;
+              }
+              25%{
+                  width: 28%;
+                  background-color: gold;
+
+              }
+              75%{
+                  width: 58%;
+                  background-color: gold;
+
+              }
+              100%{
+                  width: 85%;
+                  background-color: gold;
+
+              }
+             }
+             @keyframes span2 {
+              0%{
+                  width: 0%;
+                  background-color: gold;
+              }
+              25%{
+                  width: 20%;
+                  background-color: gold;
+
+              }
+              75%{
+                  width: 48%;
+                  background-color: gold;
+
+              }
+              100%{
+                  width: 70%;
+                  background-color: gold;
+
+              }
+             }
+            
+             @keyframes span3 {
+              0%{
+                  width: 0%;
+                  background-color: gold;
+              }
+              25%{
+                  width: 25%;
+                  background-color: gold;
+
+              }
+              75%{
+                  width: 55%;
+                  background-color: gold;
+
+              }
+              100%{
+                  width: 80%;
+                  background-color: gold;
+
+              }
+             }
+            
+                            .card img{
+              width:100%; 
+              height: 35%;
+               border-top-left-radius: 1rem; 
+               border-top-right-radius: 1rem;
+             }
+             .card img:hover{
+              opacity: 0.7;
+              transition: all 0.7s ease-in-out;
+             }
+             .cardtitle{
+              display:flex; 
+              flex-direction: column; 
+              align-items: center;
+              height: 20rem;
+             }
+             .cardtitle p{
+              color: gray;
+             }
+         /* media query for max width 896px */ 
+     
+     .sectionh1{
+      font-size: 1.6em;
+      font-family: 'Times New Roman', Times, serif; font-style:oblique ;
+      animation: fadetext 2s linear 4s 1 alternate;
+
+     }
+  .sectionheader{
+      display:flex; 
+      align-items: center;
+  }
+  .sectionheader hr{
+      height: 2px;
+      width:40%;
+      background-color: black;
+  
+  }
+  
+  .sectionheader h1{
+      font-size: 0.9em;
+  }
+  
+     #skillimages{
+      display: flex;
+       flex-flow: row wrap; 
+       justify-content: center;
+  }
+  #skillimage{
+      width:3.5em; 
+      height:6em; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center;
+       justify-content: center;
+  }
+  #skillimage img{
+      width: 2em;
+      opacity: 0.6;
+  }
+  #skillimage p{
+      font-size: 0.7em;
+      color: whitesmoke;
+  }
+  #skillimage p:hover{
+      color: rgb(76, 149, 197);
+  }
+  
+  
+  
+     .cover{
+      border:1px solid black; 
+      background-color:#F3EFEF; 
+      border-radius: 2rem; 
+      height:0.6rem;
+       }
+     .cover>span{
+      display: block;
+      height: 100%;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      background-color: gold;
+      position: relative;
+      overflow: hidden;
+     }
+     .cardtitle h2{
+      color: black;
+      font-size: 1.1em;
+      text-align: center;
+      margin-top: 2rem;
+     }
+     .cardtitle p{
+      text-align: center; 
+      font-size: 0.8em; 
+      margin-left: 1rem; 
+      margin-right: 1rem;  
+   }
+     .projectlink{
+      display: flex;
+       justify-content: center;
+     }
+     .projectlink button{
+      padding: 0.2rem 0.2rem;
+       font-size: 1.1rem; 
+      color: white; 
+      border-radius: 0.5rem;
+       background-color: rgb(76, 149, 197); 
+       margin-top: 1rem;
+     }
+     
+     #experiencetitle h1{
+      text-align: center;
+      font-size: 1.1em;
+     }
+     
+     #experiencesection h1{
+      font-size: 1.1em;
+      color: black;
+     }
+     #experiencesection h2{
+      font-size: 1.1em;
+      color: black;
+
+     }
+     #experiencesection p{
+      font-size: 0.8em;
+     }
+     #experiencesection ul li{
+      font-size: 0.8em;
+      color: grey;
+     }
+  
+  #contacttele img{
+
+animation: ringcall 6s ease-in-out 0.5s infinite alternate;    
+}
+@keyframes ringcall {
+  0%{
+      transform: rotate(15deg);
+  }
+  15%{
+      transform: rotate(30deg);
+  }
+  30%{
+      transform: rotate(45deg);
+  }
+  45%{
+      transform: rotate(60deg);
+  }
+  60%{
+      transform: rotate(45deg);
+  }
+  75%{
+      transform: rotate(30deg);
+  }
+  100%{
+      transform: rotate(15deg);
+  }
+  
+}
+}
+
+ @media(max-width:896px){
+  /* media query for max width 896px for about section of portfolio */
+  body{
+      font-size: 20px;
+  }
+  .hamburger{
+      display: none;
+  }
+  
+  .about{
+      flex-direction: column;
+      align-items: center;
+
+     }
+     
+     #aboutsection{
+      width: 100%;
+     }
+     #aboutsummary{
+      width: 100%;
+     }
+     #aboutimage{
+      width:60%; 
+      
+     }
+     #aboutimage img{
+      margin-top: 5rem;
+      width: 100%;
+      height: 15%;
+     }
+
+  /* media query for max width 896px for skill section of portfolio */
+
+  .skillsection{
+      flex-direction: column-reverse;
+      align-items: center;
+
+     }
+     #skillsectionimage{
+      width:60%;  
+     }
+     #skillsectionimage img{
+      margin-top: 1.5rem;
+      width: 100%;
+      height: 15%;
+     }
+     #skillsectioncontent{
+      width: 100%;
+     }
+  /* media query for max width 896px for experience section of portfolio */
+  .sectionheader hr{
+      width: 37%;
+              }
+     .experience{
+      flex-direction: column; 
+     }
+     #experiencetitle{
+      width: 100%;
+      padding-bottom: 1.5em;
+       border-top-right-radius: 1rem; 
+       border-bottom-left-radius: 0rem;
+     }
+     
+     .triangle{
+      width:0%;
+      border-top:20px solid rgb(76, 149, 197);
+      border-right:35px solid transparent;
+      position: relative;
+      left:15%;
+      height: 0px;
+  
+  
+  }
+ }
+
+ @media(max-width:811px){
+  .hamburger{   
+      display: block;
+  }
+  .h-nav{
+      height: 25px;
+  }
+  .v-class{
+      opacity: 0;
+  }
+  #line1{
+      height:3px;
+      width:30px;
+      margin-bottom: 0.2em;
+      background-color:white;
+  }
+  #line2{
+      height:3px;
+      width:27px;
+      margin-left:3px;
+      margin-bottom: 0.2em;
+      background-color:white;
+  }
+  #line3{
+      height:3px;
+      width:24px;
+      margin-left:6px;
+
+      margin-bottom: 0.2em;
+      background-color:white;
+  }
+  .navbar{
+      flex-direction: column;
+      transition: all 0.7s ease-out;
+  }
+  
+  .navleft{
+      display: flex;
+  }
+  .navleft h1{
+  font-style: italic;
+  color: lightseagreen;
+  font-size: 1.4rem;
+  }
+  .navright{
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5em;
+      transition: all 0.7s ease-out;
+  }
+  
+  .navright li{
+      list-style: none;
+      color: lightseagreen;
+      font-size: 1em;
+      padding-bottom: 0.8em;
+  
+  }
+  .navright li img{
+      display: none;
+  }
+ .sectionheader hr{
+  height: 2px;
+  width: 35%;
+  background-color: black;
+
+ }
+  .card{
+      width:35rem;
+      height:40rem;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+      background-color: white;
+      margin-left: 0.5rem;
+          margin-right:0.5rem;
+        
+         }
+         .card img{
+          width:100%; 
+          height: 45%;
+           border-top-left-radius: 1rem; 
+           border-top-right-radius: 1rem;
+         }
+         .cardtitle{
+          display:flex; 
+          flex-direction: column; 
+          align-items: center;
+          height: 16rem;
+         }
+ }
+ @media(max-width:530px){
+  .about{
+margin: 3em 2em;
+  }
+  .skillsection{
+      margin: 3em 2em;
+          }
+          #skillprofieciency{
+              margin: 3em 2em;
+
+          }
+          .sectionheader hr{
+              height: 2px;
+  width: 32%;
+  background-color: black;
+          }
+ }
+ @media(max-width:420px){
+  .about h1{
+      font-size:2rem
+  }
+  .about{
+      margin: 3em 1em;
+          }
+          .skillsection{
+              margin: 1em 1em;
+                  }
+                  #skillprofieciency{
+                      margin: 1em 1em;
+      
+                  }
+                  .sectionheader hr{
+          width: 25%;
+                  }
+      
+  .aboutbutton{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .aboutbutton a button{
+      margin-bottom: 1rem;
+  }
+ }
+
+
