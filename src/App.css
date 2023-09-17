@@ -453,7 +453,7 @@ transition: all 2s;
        flex-flow: row wrap; 
        justify-content: center;
   }
-  #skillimage{
+  .skillimage{
       width:3.5em; 
       height:6em; 
       display: flex; 
@@ -461,15 +461,15 @@ transition: all 2s;
       align-items: center;
        justify-content: center;
   }
-  #skillimage img{
+  .skillimage img{
       width: 2em;
       opacity: 0.6;
   }
-  #skillimage p{
+  .skillimage p{
       font-size: 0.7em;
       color: whitesmoke;
   }
-  #skillimage p:hover{
+  .skillimage p:hover{
       color: rgb(76, 149, 197);
   }
   
