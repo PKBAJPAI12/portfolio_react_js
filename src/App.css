@@ -232,6 +232,7 @@ body p {
     width: 40%;
     display: flex;
     justify-content: end;
+    align-items: baseline;
     animation: moveright 3s ease-in-out 0.5s 1;
   }
   @keyframes moveright {
@@ -539,6 +540,7 @@ body p {
   .sectionheader {
     display: flex;
     align-items: center;
+    margin-top: 3rem;
   }
   .sectionheader hr {
     height: 2px;

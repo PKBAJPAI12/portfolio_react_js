@@ -1,6 +1,8 @@
 import React from "react";
 import SectionHeader from "./SectionHeader";
 import "../App.css";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 function Projects() {
   const data=[
     {
@@ -24,6 +26,7 @@ function Projects() {
   ]
   return (
     <>
+    <Navbar/>
       <SectionHeader title="Projects"/>
       <div style={{ width: "85%", margin: "auto" }}>
         <h1 className="sectionh1">My Projects 💻</h1>

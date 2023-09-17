@@ -2,6 +2,8 @@ import React,{useContext} from "react";
 import SectionHeader from "./SectionHeader";
 import "../App.css";
 import { AppContext } from "../AppContext";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 function Experience() {
     const {page}=useContext(AppContext);
     const data=[
@@ -34,6 +36,7 @@ function Experience() {
     ]
   return (
     <>
+    <Navbar/>
     <SectionHeader title="Work Experience"/>
     <div style={{ width: "85%", margin: "auto" }}>
         <h1 className="sectionh1">My Experiences 👨‍💻

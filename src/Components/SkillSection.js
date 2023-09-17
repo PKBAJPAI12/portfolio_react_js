@@ -2,6 +2,8 @@ import React,{useContext} from "react";
 import SectionHeader from "./SectionHeader";
 import "../App.css";
 import { AppContext } from "../AppContext";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 function SkillSection() {
   const {page}=useContext(AppContext);
   let data = [
@@ -73,6 +75,7 @@ function SkillSection() {
   ];
   return (
     <>
+      <Navbar/>
       <SectionHeader title="My Skills"/>
       <div class="skillsection">
         <div id="skillsectionimage">

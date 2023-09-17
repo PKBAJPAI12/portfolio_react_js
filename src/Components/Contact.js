@@ -1,11 +1,14 @@
 import React from "react";
 import "../App.css";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 import SectionHeader from "./SectionHeader";
 function Contact() {
   return (
     <>
+    <Navbar/>
    <SectionHeader title="Contact Me" />
-    <div style={{ width: "85%", margin: "auto" }}>
+    <div style={{ width: "85%", margin: "auto",minHeight:"100vh",marginTop:"5rem"}}>
         <h1 style={{textAlign: "center"}} className="sectionh1">
             Touch with Me <span id="contacttele"><img style={{width:"2rem"}} src={require("../Assets/call.png")} alt="" srcset=""/></span> </h1>
             <div style={{display: "flex", flexDirection:"column",  alignItems:"center"}}>

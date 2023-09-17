@@ -34,19 +34,22 @@ function Navbar() {
         <div className="navbar">
           <ul className={page?'navrightl':'navright'}>
             <li>
-              <a href="#about">About</a>
+          <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="#skill">Skills</a>
+            <Link to="/skills">Skills</Link>
             </li>
             <li>
-              <a href="#project">Projects</a>
+            <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <a href="#certification">Certification</a>
+            <Link to="/certification">Certification</Link>
             </li>
             <li>
-              <a href="#experience">Work Experience</a>
+            <Link to="/experience">Work Experience</Link>
+            </li>
+            <li>
+            <Link to="/contact">Contact Me</Link>
             </li>
             {/*page && (
               <>
@@ -97,27 +100,30 @@ function Navbar() {
                   Dark Mode
                 </li>:<li onClick={handlePage} style={liStyle}>
                   Light Mode
-                </li>}s
+                </li>}
           </ul>
         </div>
       )}
       {!navOpen && (
         <div className="navbar h-nav">
           <ul className={page?"navrightl v-class":"navright v-class"}>
-            <li>
-              <a href="#about">About</a>
+          <li>
+            <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="#skill">Skills</a>
+            <Link to="/skills">Skills</Link>
             </li>
             <li>
-              <a href="#project">Projects</a>
+            <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <a href="#certification">Certification</a>
+            <Link to="/certification">Certification</Link>
             </li>
             <li>
-              <a href="#experience">Work Experience</a>
+            <Link to="/experience">Work Experience</Link>
+            </li>
+            <li>
+            <Link to="/contact">Contact Me</Link>
             </li>
              {page?<li style={liImage}>
              <img

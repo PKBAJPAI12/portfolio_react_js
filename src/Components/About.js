@@ -1,10 +1,14 @@
 import React,{useContext} from "react";
 import { AppContext } from "../AppContext";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 import "../App.css";
 function About() {
   const {page}=useContext(AppContext);
   return (
-      <div className="about">
+    <>
+    <Navbar/>
+    <div style={{minHeight: "100vh",marginTop: "8rem"}} className="about">
       <div id="aboutsection">
         <div id="aboutsummary">
           <a name="about">
@@ -69,6 +73,7 @@ function About() {
         <img src={require('../Assets/Home Design.png')} alt="" />
       </div>
     </div>
+    </>
   );
 }
 export default About;
