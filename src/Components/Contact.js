@@ -1,17 +1,13 @@
 import React from "react";
-import "./App.css";
+import "../App.css";
+import SectionHeader from "./SectionHeader";
 function Contact() {
   return (
     <>
-    <div className="sectionheader">
-    <hr/>
-  <a name="contact"><h1>Contact Me</h1></a>  
-    <hr/>
-
-</div>
+   <SectionHeader title="Contact Me" />
     <div style={{ width: "85%", margin: "auto" }}>
         <h1 style={{textAlign: "center"}} className="sectionh1">
-            Touch with Me <span id="contacttele"><img style={{width:"2rem"}} src={require("./Assets/call.png")} alt="" srcset=""/></span> </h1>
+            Touch with Me <span id="contacttele"><img style={{width:"2rem"}} src={require("../Assets/call.png")} alt="" srcset=""/></span> </h1>
             <div style={{display: "flex", flexDirection:"column",  alignItems:"center"}}>
                 <p style={{textAlign: "center", fontSize: "1.1rem"}}>YOU WANNA WANT TO CONTACT ME. MY INBOX IS OPEN FOR ALL</p> 
                 <p style={{fontSize:"1.5rem",color:"gray"}}>Vijay Enclave, Delhi</p>
@@ -19,15 +15,15 @@ function Contact() {
                <br/>
                <div className="aboutlink">
                 <a  href="https://github.com/PKBAJPAI12" target="_blank"><img
-                         src={require("./Assets/github (1).png")} alt="" srcset=""/></a>
+                         src={require("../Assets/github (1).png")} alt="" srcset=""/></a>
                 <a  href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-                    target="_blank"><img src={require("./Assets/linkedin.png")} alt="" srcset=""/></a>
+                    target="_blank"><img src={require("../Assets/linkedin.png")} alt="" srcset=""/></a>
                 <a  href="https://www.hackerrank.com/prateek_dme_dite" target="_blank"><img
-                src={require("./Assets/hackerrank.png")} alt="" srcset=""/></a>
+                src={require("../Assets/hackerrank.png")} alt="" srcset=""/></a>
                 <a  href="https://www.leetcode.com/pkbajpai123/" target="_blank"><img
-                src={require("./Assets/leetcode.png")} alt="" srcset=""/></a>
+                src={require("../Assets/leetcode.png")} alt="" srcset=""/></a>
                 <a  href="https://twitter.com/PKbajpai123" target="_blank"><img
-                src={require("./Assets/twitter.png")} alt="" srcset=""/></a>
+                src={require("../Assets/twitter.png")} alt="" srcset=""/></a>
                 
             </div>
             </div>

@@ -1,13 +1,13 @@
 import "./App.css";
 import { AppProvider } from "./AppContext";
-import Navbar from "./Navbar";
-import About from "./About";
-import SkillSection from "./SkillSection";
-import Projects from "./Projects";
-import Experience from "./Experience";
-import Certification from "./Certification";
-import Contact from "./Contact";
-import Footer from "./Footer";
+import Navbar from "./Components/Navbar";
+import About from "./Components/About";
+import SkillSection from "./Components/SkillSection";
+import Projects from "./Components/Projects";
+import Experience from "./Components/Experience";
+import Certification from "./Components/Certification";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 function App() {
   return (
     <AppProvider>

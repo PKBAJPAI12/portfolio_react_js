@@ -1,79 +1,93 @@
-import React from "react";
-import "./App.css";
+import React,{useContext} from "react";
+import SectionHeader from "./SectionHeader";
+import "../App.css";
+import { AppContext } from "../AppContext";
 function SkillSection() {
+  const {page}=useContext(AppContext);
   let data = [
     {
       name: "HTML 5",
       image: "html-5",
+      imagel:"html"
     },
     {
       name: "CSS 3",
       image: "css",
+      imagel:"css-3"
     },
     {
       name: "Bootstrap5",
       image: "bootstrap",
+      imagel:"bootstrap (1)"
     },
     {
       name: "JavaScript",
       image: "java-script (1)",
+      imagel:"java-script"
+    },
+    {
+      name: "React Js",
+      image: "react (2)",
+      imagel:"react (3)"
     },
     {
       name: "Java",
       image: "java (1)",
+      imagel:"java"
     },
     {
       name: "C++",
       image: "c",
+      imagel:"c-logo"
     },
     {
       name: "JSP",
-      image: "jsp-file",
+      image:"jsp-file",
+      imagel: "jsp-file (1)",
     },
     {
       name: "PHP",
-      image: "php",
+      image:"php",
+      imagel: "php (1)",
     },
     {
       name: "MySQL",
-      image: "database (3)",
+      image:"database (3)",
+      imagel: "sql-server",
     },
     {
       name: "Hibernate",
       image: "hibernate",
+      imagel:"hibernate (2)"
     },
     {
       name: "AWS",
       image: "html-5",
+      imagel:"html"
     },
     {
       name: "MS AZURE",
       image: "azure",
-    },
+      imagel:"azure (1)"
+    }
   ];
   return (
     <>
-      <div className="sectionheader">
-        <hr />
-        <a name="skill">
-          <h1>My Skills</h1>
-        </a>
-        <hr />
-      </div>
+      <SectionHeader title="My Skills"/>
       <div class="skillsection">
         <div id="skillsectionimage">
-          <img src={require("./Assets/Untitled design (10).png")} alt="" />
+          <img src={page?require("../Assets/Skill.png"):require("../Assets/Untitled design (10).png")} alt="" />
         </div>
         <div id="skillsectioncontent">
           <h1 className="sectionh1">What I Know</h1>
-          <p style={{ color: "gold" }}>
+          <p style={{color:page?"#868e96":"gold"}}>
             PASSIONATE CODER WHO INTERESTED TO EXPLORE EVERY TECH STACK 😎
           </p>
           <div id="skillimages">
             {data.map((skill) => {
               return (
                 <div class="skillimage">
-                  <img src={require(`./Assets/${skill.image}.png`)} alt="" />
+                  <img src={page?require(`../Assets/${skill.imagel}.png`):require(`../Assets/${skill.image}.png`)} alt="" />
                   <p>{skill.name}</p>
                 </div>
               );
@@ -92,7 +106,7 @@ function SkillSection() {
                    
                 </div>
                 <div className="cover">
-                    <span id="span1" style={{width:"85%"}}></span>
+                    <span id={page?"span1l":"span1"} style={{width:"85%"}}></span>
                 </div>
             </div>
             <div>
@@ -102,7 +116,7 @@ function SkillSection() {
                    
                 </div>
                 <div className="cover">
-                    <span id="span2" style={{width:"70%"}}></span>
+                    <span id={page?"span2l":"span2"} style={{width:"70%"}}></span>
                 </div>
             </div>
             <div>
@@ -111,7 +125,7 @@ function SkillSection() {
                     <p>80%</p>
                    
                 </div>                <div className="cover">
-                    <span id="span3" style={{width:"80%"}}></span>
+                    <span id={page?"span3l":"span3"} style={{width:"80%"}}></span>
                 </div>
             </div>
         </div>

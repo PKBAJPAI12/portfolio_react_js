@@ -1,6 +1,6 @@
 import React,{useContext} from "react";
-import { AppContext } from "./AppContext";
-import "./App.css";
+import { AppContext } from "../AppContext";
+import "../App.css";
 function About() {
   const {page}=useContext(AppContext);
   return (
@@ -18,25 +18,25 @@ function About() {
 
           <div className="aboutlink">
             <a href="https://github.com/PKBAJPAI12" target="_blank">
-              <img src={page?require('./Assets/github.png'):require('./Assets/github (1).png')} alt="" srcset="" />
+              <img src={page?require('../Assets/github.png'):require('../Assets/github (1).png')} alt="" srcset="" />
             </a>
             <a
               href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
               target="_blank"
             >
-              <img src={require('./Assets/linkedin.png')} alt="" srcset="" />
+              <img src={require('../Assets/linkedin.png')} alt="" srcset="" />
             </a>
             <a
               href="https://www.hackerrank.com/prateek_dme_dite"
               target="_blank"
             >
-              <img src={require("./Assets/hackerrank.png")} alt="" srcset="" />
+              <img src={require("../Assets/hackerrank.png")} alt="" srcset="" />
             </a>
             <a href="https://www.leetcode.com/pkbajpai123/" target="_blank">
-              <img src={require("./Assets/leetcode.png")} alt="" srcset="" />
+              <img src={require("../Assets/leetcode.png")} alt="" srcset="" />
             </a>
             <a href="https://twitter.com/PKbajpai123" target="_blank">
-              <img src={require("./Assets/twitter.png")} alt="" srcset="" />
+              <img src={require("../Assets/twitter.png")} alt="" srcset="" />
             </a>
           </div>
           <div class="aboutbutton">
@@ -65,9 +65,8 @@ function About() {
           </div>
         </div>
       </div>
-
       <div id="aboutimage">
-        <img src={require('./Assets/Home Design.png')} alt="" />
+        <img src={require('../Assets/Home Design.png')} alt="" />
       </div>
     </div>
   );

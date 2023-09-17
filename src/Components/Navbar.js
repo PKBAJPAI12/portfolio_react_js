@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { AppContext } from "./AppContext";
+import { AppContext } from "../AppContext";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./App.css";
+import "../App.css";
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
   const context=useContext(AppContext);
@@ -53,7 +53,7 @@ function Navbar() {
                 <li style={liImage}>
                   <img
                     style={imageStyle}
-                    src={require(`./Assets/sun.png`)}
+                    src={require(`../Assets/sun.png`)}
                     alt=""
                     srcset=""
                   />{" "}
@@ -68,7 +68,7 @@ function Navbar() {
                 <li style={liImage}>
                   <img
                     style={imageStyle}
-                    src={require(`./Assets/sunny.png`)}
+                    src={require(`../Assets/sunny.png`)}
                     alt=""
                     srcset=""
                   />{" "}
@@ -81,14 +81,14 @@ function Navbar() {
             {page?<li style={liImage}>
              <img
                style={imageStyle}
-               src={require(`./Assets/sun.png`)}
+               src={require(`../Assets/sun.png`)}
                alt=""
                srcset=""
              />
            </li>: <li style={liImage}>
              <img
                style={imageStyle}
-               src={require(`./Assets/sunny.png`)}
+               src={require(`../Assets/sunny.png`)}
                alt=""
                srcset=""
              />
@@ -97,7 +97,7 @@ function Navbar() {
                   Dark Mode
                 </li>:<li onClick={handlePage} style={liStyle}>
                   Light Mode
-                </li>}
+                </li>}s
           </ul>
         </div>
       )}
@@ -122,14 +122,14 @@ function Navbar() {
              {page?<li style={liImage}>
              <img
                style={imageStyle}
-               src={require(`./Assets/sun.png`)}
+               src={require(`../Assets/sun.png`)}
                alt=""
                srcset=""
              />
            </li>: <li style={liImage}>
              <img
                style={imageStyle}
-               src={require(`./Assets/sunny.png`)}
+               src={require(`../Assets/sunny.png`)}
                alt=""
                srcset=""
              />
