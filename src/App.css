@@ -63,6 +63,17 @@ body p{
   color: white;
   font-size: 1.4rem;
   }
+  .navleftl{
+    display: flex;
+    position: absolute;
+    top:2%;
+    left:4%
+}
+.navleftl h1{
+font-style: italic;
+color: lightseagreen;
+font-size: 1.4rem;
+}
   .navright{
       display: flex; 
       align-items: center;
@@ -79,6 +90,22 @@ body p{
       text-decoration: none;
       color: white;
   }
+  .navrightl{
+    display: flex; 
+    align-items: center;
+}
+  .navrightl li{
+    list-style: none;
+    color: lightseagreen;
+    font-size: 1.1rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+
+}
+.navrightl li a{
+    text-decoration: none;
+    color: lightseagreen;
+}
   .hamburger{
       position: absolute;
       top:25px;
@@ -106,7 +133,26 @@ body p{
       margin-bottom: 0.2em;
       background-color:white;
   }
-
+  #line1l{
+    height:3px;
+    width:30px;
+    margin-bottom: 0.2em;
+    background-color:black;
+}
+#line2l{
+    height:3px;
+    width:27px;
+    margin-left:3px;
+    margin-bottom: 0.2em;
+    background-color:black;
+}
+ #line3l{
+    height:3px;
+    width:24px;
+    margin-left:6px;
+    margin-bottom: 0.2em;
+    background-color:black;
+}
   .circle{
       border-radius: 100%;
       z-index: -1;
@@ -228,7 +274,7 @@ animation: fadetext 2s linear 0.5s 1 alternate;
      .aboutbutton{
       margin-top: 1.5em;
      }
-     .aboutbutton button{
+     .btn{
       width:8rem;
       padding: 0.5rem; 
       border-top-left-radius:2rem; 
@@ -236,17 +282,34 @@ animation: fadetext 2s linear 0.5s 1 alternate;
       background-color:rgb(76, 149, 197); 
       color: white; 
       font-size: 1.1rem;
-      animation:  fadetext 2s linear 0.5s 1 alternate;;
+      animation:  fadetext 2s linear 0.5s 1 alternate;
 
      }
-     .aboutbutton button:hover{
+     .btn:hover{
 color: blue;
 background-color: red;
 border-top-right-radius:2rem; 
 border-bottom-left-radius: 2rem; 
 transition: all 2s;
      }
+     .btnl{
+        width:8rem;
+        padding: 0.5rem; 
+        border-top-left-radius:2rem; 
+        border-bottom-right-radius: 2rem; 
+        background-color:lightseagreen; 
+        color: white; 
+        font-size: 1.1rem;
+        animation:  fadetext 2s linear 0.5s 1 alternate;
   
+       }
+       .btnl:hover{
+        color: black;
+        background-color: rgb(76, 149, 197);
+        border-top-right-radius:2rem; 
+        border-bottom-left-radius: 2rem; 
+        transition: all 2s;
+       }
   
        /*skill part of portfolio*/
        
@@ -675,6 +738,27 @@ animation: ringcall 6s ease-in-out 0.5s infinite alternate;
       margin-bottom: 0.2em;
       background-color:white;
   }
+  #line1l{
+    height:3px;
+    width:30px;
+    margin-bottom: 0.2em;
+    background-color:black;
+}
+#line2l{
+    height:3px;
+    width:27px;
+    margin-left:3px;
+    margin-bottom: 0.2em;
+    background-color:black;
+}
+#line3l{
+    height:3px;
+    width:24px;
+    margin-left:6px;
+
+    margin-bottom: 0.2em;
+    background-color:black;
+}
   .navbar{
       flex-direction: column;
       transition: all 0.7s ease-out;
@@ -688,6 +772,14 @@ animation: ringcall 6s ease-in-out 0.5s infinite alternate;
   color: lightseagreen;
   font-size: 1.4rem;
   }
+  .navleftl{
+    display: flex;
+}
+.navleftl h1{
+font-style: italic;
+color: lightseagreen;
+font-size: 1.s4rem;
+}
   .navright{
       flex-direction: column;
       align-items: center;
@@ -705,6 +797,23 @@ animation: ringcall 6s ease-in-out 0.5s infinite alternate;
   .navright li img{
       display: none;
   }
+  .navrightl{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+    transition: all 0.7s ease-out;
+}
+
+.navrightl li{
+    list-style: none;
+    color: lightseagreen;
+    font-size: 1em;
+    padding-bottom: 0.8em;
+
+}
+.navrightl li img{
+    display: none;
+}
  .sectionheader hr{
   height: 2px;
   width: 35%;

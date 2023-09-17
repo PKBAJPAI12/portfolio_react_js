@@ -1,22 +1,24 @@
-import React from "react";
+import React,{useContext} from "react";
+import { AppContext } from "./AppContext";
 import "./App.css";
 function About() {
+  const {page}=useContext(AppContext);
   return (
-    <div className="about">
+      <div className="about">
       <div id="aboutsection">
         <div id="aboutsummary">
           <a name="about">
             <h1>Hi I'm Prateek 💻</h1>
           </a>
-          <p style={{ color: "gold" }}>
+          <p style={{color:page?"#868e96":"gold"}}>
             A passionate Web Developer 🚀 experienced in building Full-Stack
             applications with a focus on maintaining databases and
-            infrastructure server-side code.{" "}
+            infrastructure server-side code.
           </p>
 
           <div className="aboutlink">
             <a href="https://github.com/PKBAJPAI12" target="_blank">
-              <img src={require('./Assets/github (1).png')} alt="" srcset="" />
+              <img src={page?require('./Assets/github.png'):require('./Assets/github (1).png')} alt="" srcset="" />
             </a>
             <a
               href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
@@ -42,18 +44,19 @@ function About() {
               href="https://drive.google.com/file/d/1mrO7lltaDPJNrzOQqQ7Avc-dn8mwijBW/view?usp=sharing"
               target="_blank"
             >
-              {" "}
-              <button style={{ marginRight: "1rem" }}>Resume</button>
+      
+              <button className={page?"btnl":"btn"} style={{ marginRight: "1rem"}}>Resume</button>
             </a>
 
             <a href="#contact">
-              {" "}
+        
               <button
+              className={page?"btnl":"btn"}
                 style={{
                   borderBottomLeftRadius: "2em",
                   borderTopLeftRadius: "0em",
                   borderTopRightRadius: "2em",
-                  borderBottomRightRadius: "0em",
+                  borderBottomRightRadius: "0em"
                 }}
               >
                 Contact Me

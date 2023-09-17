@@ -28,11 +28,11 @@ function Navbar() {
   return (
     <>
       {page && (
-        <style>{`body { background-color: ${bodyBackgroundColor}; color: black; font-size: 24px; } body p{ color: #868e96;} `}</style>
+        <style>{`body { background-color: ${bodyBackgroundColor}; color: black; font-size: 24px; } body p{ color: #868e96;}  `}</style>
       )}
       {navOpen && (
         <div className="navbar">
-          <ul className="navright">
+          <ul className={page?'navrightl':'navright'}>
             <li>
               <a href="#about">About</a>
             </li>
@@ -78,23 +78,32 @@ function Navbar() {
                 </li>
               </>
             )*/}
-            <li style={liImage}>
-                  <img
-                    style={imageStyle}
-                    src={require(`./Assets/sunny.png`)}
-                    alt=""
-                    srcset=""
-                  />
-                </li>
-                <li onClick={handlePage} style={liStyle}>
+            {page?<li style={liImage}>
+             <img
+               style={imageStyle}
+               src={require(`./Assets/sun.png`)}
+               alt=""
+               srcset=""
+             />
+           </li>: <li style={liImage}>
+             <img
+               style={imageStyle}
+               src={require(`./Assets/sunny.png`)}
+               alt=""
+               srcset=""
+             />
+           </li>}
+           {page?<li onClick={handlePage} style={liStyle}>
+                  Dark Mode
+                </li>:<li onClick={handlePage} style={liStyle}>
                   Light Mode
-                </li>
+                </li>}
           </ul>
         </div>
       )}
       {!navOpen && (
         <div className="navbar h-nav">
-          <ul className="navright v-class">
+          <ul className={page?"navrightl v-class":"navright v-class"}>
             <li>
               <a href="#about">About</a>
             </li>
@@ -110,56 +119,35 @@ function Navbar() {
             <li>
               <a href="#experience">Work Experience</a>
             </li>
-            {/*page && (
-              <>
-                <li style={liImage}>
-                  <img
-                    style={imageStyle}
-                    src={require(`./Assets/sun.png`)}
-                    alt=""
-                    srcset=""
-                  />{" "}
-                </li>
-                <li onClick={handlePage} style={liStyle}>
+             {page?<li style={liImage}>
+             <img
+               style={imageStyle}
+               src={require(`./Assets/sun.png`)}
+               alt=""
+               srcset=""
+             />
+           </li>: <li style={liImage}>
+             <img
+               style={imageStyle}
+               src={require(`./Assets/sunny.png`)}
+               alt=""
+               srcset=""
+             />
+           </li>}
+           {page?<li onClick={handlePage} style={liStyle}>
                   Dark Mode
-                </li>
-              </>
-            )*/}
-            {/*!page && (
-              <>
-                <li style={liImage}>
-                  <img
-                    style={imageStyle}
-                    src={require(`./Assets/sunny.png`)}
-                    alt=""
-                    srcset=""
-                  />
-                </li>
-                <li onClick={handlePage} style={liStyle}>
+                </li>:<li onClick={handlePage} style={liStyle}>
                   Light Mode
-                </li>
-              </>
-            )*/}
-            <li style={liImage}>
-                  <img
-                    style={imageStyle}
-                    src={require(`./Assets/sunny.png`)}
-                    alt=""
-                    srcset=""
-                  />
-                </li>
-                <li onClick={handlePage} style={liStyle}>
-                  Light Mode
-                </li>
+                </li>}
           </ul>
         </div>
       )}
       <div onClick={handleClick} className="hamburger">
-        <div id="line1"></div>
-        <div id="line2"></div>
-        <div id="line3"></div>
+        <div id={page?'line1l':'line1'}></div>
+        <div id={page?'line2l':'line2'}></div>
+        <div id={page?'line3l':'line3'}></div>
       </div>
-      <div className="navleft">
+      <div className={page?'navleftl':'navleft'}>
         <h1>
           &#60; &nbsp;
           <span style={{ fontFamily: "The Nautigal", fontStyle: "cursive" }}>
