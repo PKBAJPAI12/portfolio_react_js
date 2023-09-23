@@ -6,16 +6,22 @@ import Footer from "./Footer";
 function Certification() {
     const data=[
         {
+            name:"On The Spot Award",
+            image:"onspot.PNG",
+            details:"Received an On-the-Spot Award in recognition of exceptional individual performance, celebrating my outstanding contributions to the organization.",
+            link:"https://drive.google.com/file/d/16HzCfjkrqKYcHtRSJKI7XItBZBVmH-L3/view?usp=sharing"
+        },
+        {
+            name:"Elevate Wings Award",
+            image:"wings1.PNG",
+            details:"Received the prestigious Wings1 Award Certificate and Gems in acknowledgment of a remarkable proficiency in Oracle PL/SQL, demonstrating excellence in assessment and expertise",
+            link:"https://drive.google.com/file/d/1lODDmGVULXTzGaV52RAjz2igEl4qPdsh/view?usp=sharing"
+        },
+        {
             name:"Web Development",
             image:"web-development.webp",
             details:"Learned about Web Development of HTML, CSS, Bootstrap, DBMS, PHP, JS, React from Internshala",
             link:"https://bit.ly/3Olp6Wi"
-        },
-        {
-            name:"Accenture Developer Program",
-            image:"Accenture.png",
-            details:"Learned about Technical Requirements, Reading and Understanding of Code, SDLC and Debugging Algorithm and more about Unit Testing, UAT.",
-            link:"https://bit.ly/3cuynhx"
         },
         {
             name:"Core Java",
