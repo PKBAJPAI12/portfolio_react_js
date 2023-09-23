@@ -2,6 +2,7 @@ import React,{useContext} from "react";
 import { AppContext } from "../AppContext";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 import "../App.css";
 function About() {
   const {page}=useContext(AppContext);
@@ -52,7 +53,7 @@ function About() {
               <button className={page?"btnl":"btn"} style={{ marginRight: "1rem"}}>Resume</button>
             </a>
 
-            <a href="#contact">
+            <Link to="/contact">
         
               <button
               className={page?"btnl":"btn"}
@@ -65,7 +66,7 @@ function About() {
               >
                 Contact Me
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

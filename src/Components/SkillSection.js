@@ -33,6 +33,21 @@ function SkillSection() {
       imagel:"react (3)"
     },
     {
+      name: "Node Js",
+      image: "node-js",
+      imagel:"nodejs (2)" 
+    },
+    {
+      name: "Express Js",
+      image: "express (3)",
+      imagel:"express" 
+    },
+    {
+      name: "MongoDB",
+      image: "mongodb",
+      imagel:"mongodb (1)" 
+    },
+    {
       name: "Java",
       image: "java (1)",
       imagel:"java"
@@ -64,8 +79,8 @@ function SkillSection() {
     },
     {
       name: "AWS",
-      image: "html-5",
-      imagel:"html"
+      image: "aws",
+      imagel:"aws (1)"
     },
     {
       name: "MS AZURE",
@@ -91,7 +106,7 @@ function SkillSection() {
               return (
                 <div class="skillimage">
                   <img src={page?require(`../Assets/${skill.imagel}.png`):require(`../Assets/${skill.image}.png`)} alt="" />
-                  <p>{skill.name}</p>
+                  <p style={{color:page?"gray":"white"}}>{skill.name}</p>
                 </div>
               );
             })}
