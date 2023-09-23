@@ -46,7 +46,7 @@ function About() {
           </div>
           <div class="aboutbutton">
             <a
-              href="https://drive.google.com/file/d/1mrO7lltaDPJNrzOQqQ7Avc-dn8mwijBW/view?usp=sharing"
+              href="https://drive.google.com/file/d/1VoHF6H248LDgQUcXuKjhw2juNLQScs_e/view?usp=sharing"
               target="_blank"
             >
       
