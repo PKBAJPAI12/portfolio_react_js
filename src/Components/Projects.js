@@ -6,6 +6,12 @@ import Footer from "./Footer";
 function Projects() {
   const data=[
     {
+      projectName:"Ecommerce Application",
+      description:"Designed and developed a robust e-commerce application, implementing a comprehensive suite of features including secure user registration with Node Mailer verification, encrypted password storage using bcrypt, and a secure login system with JWT authentication. Ensured role-based permissions for enhanced security and user-specific functionality. Developed end-to-end features for product management, including creating, deleting, and fetching products with extensive filtration, search capabilities, and pagination. Implemented a detailed product view with a focus on managing ratings and user reviews, contributing to an enriched user experience. Integrated seamless shopping cart functionality, enabling users to add products, proceed to checkout, and successfully complete transactions using the Stripe API for a secure and reliable payment gateway. Established well-defined routes for efficient order managemen",
+      image:"Screenshot (1107).png",
+      link:"https://github.com/PKBAJPAI12/ecommerceAppMERN"
+    },
+    {
       projectName:"Clothing Ecommerce",
       description:"E-commerce (Clothing Ecommerce) is the buying and selling of cloths, or the transmitting of funds or data, over an electronic network, primarily the internet.",
       image:"Screenshot (1107).png",
