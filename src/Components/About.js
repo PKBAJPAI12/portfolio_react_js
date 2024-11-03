@@ -16,7 +16,7 @@ function About() {
             <h1>Hi I'm Prateek 💻</h1>
           </a>
           <p style={{color:page?"#868e96":"gold"}}>
-            A passionate Web Developer 🚀 experienced in building Full-Stack
+            A passionate Web Developer 🚀 2+ years of experienced in building Full-Stack
             applications with a focus on maintaining databases and
             infrastructure server-side code.
           </p>
@@ -46,7 +46,7 @@ function About() {
           </div>
           <div class="aboutbutton">
             <a
-              href="https://drive.google.com/file/d/1VoHF6H248LDgQUcXuKjhw2juNLQScs_e/view?usp=sharing"
+              href="https://drive.google.com/file/d/189QyQEjWFMfTrXY98kueO1j39ro9Ng3Z/view?usp=sharing"
               target="_blank"
             >
       

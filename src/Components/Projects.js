@@ -7,21 +7,33 @@ function Projects() {
   const data=[
     {
       projectName:"Ecommerce Application",
-      description:"Designed and developed a robust e-commerce application, implementing a comprehensive suite of features including secure user registration with Node Mailer verification, encrypted password storage using bcrypt, and a secure login system with JWT authentication. Ensured role-based permissions for enhanced security and user-specific functionality. Developed end-to-end features for product management, including creating, deleting, and fetching products with extensive filtration, search capabilities, and pagination. Implemented a detailed product view with a focus on managing ratings and user reviews, contributing to an enriched user experience. Integrated seamless shopping cart functionality, enabling users to add products, proceed to checkout, and successfully complete transactions using the Stripe API for a secure and reliable payment gateway. Established well-defined routes for efficient order managemen",
+      description:"This project is a fully functional e-commerce application built using the MERN stack, with integrations for payment processing and CI/CD pipelines. The application includes essential features such as user authentication, product management, shopping cart functionality, and secure payments.",
       image:"Screenshot (1107).png",
       link:"https://github.com/PKBAJPAI12/ecommerceAppMERN"
-    },
-    {
-      projectName:"Clothing Ecommerce",
-      description:"E-commerce (Clothing Ecommerce) is the buying and selling of cloths, or the transmitting of funds or data, over an electronic network, primarily the internet.",
-      image:"Screenshot (1107).png",
-      link:"https://github.com/PKBAJPAI12/Clothing-Ecommerce"
     },
     {
       projectName:"Electricity Management",
       description:"It is a web app that in which electricity bills are handled. Admin will be able to add users and calculate bills as demand. User will Be able to see his Amount left and Dues Left and pay Bill.",
       image:"Screenshot (1110).png",
       link:"https://github.com/PKBAJPAI12/electricity_management_app"
+    },
+    {
+      projectName:"ElasticSearch EMS API",
+      description:"This Django application provides a RESTful API for managing employee data using Elasticsearch as the backend database. The API allows for searching, creating, and filtering employees based on various fields such as name, designation, gender, and age.",
+      image:"project.png",
+      link:"https://github.com/PKBAJPAI12/Elasticsearch_EMS_Api"
+    },
+    {
+      projectName:"Dashboard UI using React Js and Chart Js",
+      description:"Developed a dynamic and responsive dashboard UI using React.js and Chart.js, featuring interactive data visualizations and a mobile-friendly design.",
+      image:"FitPeo Dashboard.png",
+      link:"https://github.com/PKBAJPAI12/Fitpeo-Dashboard-Assignment"
+    },
+    {
+      projectName:"Clothing Ecommerce",
+      description:"E-commerce (Clothing Ecommerce) is the buying and selling of cloths, or the transmitting of funds or data, over an electronic network, primarily the internet.",
+      image:"Screenshot (1107).png",
+      link:"https://github.com/PKBAJPAI12/Clothing-Ecommerce"
     },
     {
       projectName:"Banking Management",

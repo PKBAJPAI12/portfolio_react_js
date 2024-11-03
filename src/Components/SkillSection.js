@@ -48,14 +48,64 @@ function SkillSection() {
       imagel:"mongodb (1)" 
     },
     {
+      name: "Redux",
+      image: "redux",
+      imagel:"redux (1)"
+    },
+    {
+      name: "TypeScript",
+      image: "typescript",
+      imagel:"typescript (1)"
+    },
+    {
+      name: "Jest",
+      image: "jest",
+      imagel:"jest (1)"
+    },
+    {
+      name: "Next js",
+      image: "next",
+      imagel:"next"
+    },
+    {
+      name: "Vue js",
+      image: "vue-dot-js",
+      imagel:"vue-js"
+    },
+    {
+      name: "Nuxt js",
+      image: "nuxt-dot-js",
+      imagel:"nuxt-dot-js (1)"
+    },
+    {
+      name: "ElasticSearch",
+      image: "elastic",
+      imagel:"elastic-search"
+    },
+    {
       name: "Java",
       image: "java (1)",
       imagel:"java"
     },
     {
+      name: "Python",
+      image: "python",
+      imagel:"python (1)"
+    },
+    {
+      name: "Django",
+      image: "django (1)",
+      imagel:"django"
+    },
+    {
       name: "C++",
       image: "c",
       imagel:"c-logo"
+    },
+    {
+      name: "Redis",
+      image: "redis",
+      imagel:"redis"
     },
     {
       name: "JSP",
@@ -86,6 +136,21 @@ function SkillSection() {
       name: "MS AZURE",
       image: "azure",
       imagel:"azure (1)"
+    },
+    {
+      name: "Heroku",
+      image: "heroku",
+      imagel:"heroku (1)"
+    },
+    {
+      name: "Postman",
+      image: "postman",
+      imagel:"postman (1)"
+    },
+    {
+      name: "Webpack",
+      image: "webpack",
+      imagel:"webpack (1)"
     }
   ];
   return (

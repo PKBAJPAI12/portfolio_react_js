@@ -10,10 +10,17 @@ function Experience() {
         {
             companyName:"Tata Consultancy Services",
             companyLogo:"tcs1.png",
-            postTitle:"Developer",
+            postTitle:"Full Stack Developer",
             duration:"Nov 2022- Present",
-            jobDescription:["Design and Developed reusable and scalable UI components, ensuring meticulous debugging throughout the process resulting in improved code maintainability and reduced development time by integrating REST APIs and JSON responses using cutting-edge technologies like AWS,Vue.js, Nuxt.js, and Node.js.",
-            "Successfully collaborated with cross-functional teams, utilizing Agile methodologies and used tools and software like Jira, ServiceNow, Contentful,Git and GitHub, Heroku"]
+            jobDescription:["Implement business logic for user authentication with utilized Rest API for HCP login",
+            "Translated Figma wireframes into reusable components, designing mobile-friendly and responsive UI",
+        "Implement Contentful CMS and Redis caching integration to improve website performance",
+    "Built Rest API on AWS API Gateway using AWS Lambda, including rate limiting, enhancing performance and reliability, using these Rest APIs on frontend and developing business logic",
+"Worked on AWS Domain, React Migration, and SEO Development which increased website traffic by 25% with cross-functional teams, following Agile methodologies and tools like Jira, ServiceNow",
+"Develop CI/CD pipeline using GitHub Actions and AWS, reducing deployment time and ensuring 99.99% uptime",
+"Created an automation testing tool for end-to-end browser testing using Playwright, TypeScript, Cucumber, and Node.js, integrating it with GitHub Actions CI for automated script execution.",
+"Developed a tool using Puppeteer, PdfLib, and Node Js to automate capture screenshots with event handling across device viewports from website sitemaps, generating PDF reports, and eliminating manual effort",
+"Participated in code reviews to ensure quality and best practices, and Led React.js training and KT sessions for new joiners."]
         },
         {
         companyName:"Future Ready Talent",
